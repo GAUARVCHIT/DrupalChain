@@ -1,0 +1,44 @@
+<h2>My Node Details:</h2>
+
+<table style="width:80%">
+  <tr>
+    <th>Name:</th>
+    <td>{{result.chainname}}</td>
+  </tr>
+  <tr>
+    <th>Version:</th>
+    <td>{{result.version}}</td>
+  </tr>
+  <tr>
+    <th>Protocol:</th>
+    <td>{{result.protocolversion}}</td>
+  </tr>
+  <tr>
+    <th>Node address:</th>
+    <td>{{result.nodeaddress}}</td>
+  </tr>
+  <tr>
+    <th>Blocks:</th>
+    <td>{{result.blocks}}</td>
+  </tr>
+  <tr>
+    <th>Peers:</th>
+    <td>{{result.connections}}</td>
+  </tr>
+</table>
+
+<h2>Transfer Asset:</h2>
+</body>
+</html>
+
+<form method='post' action=''>
+    {{items.form_build_id}}
+    {{items.form_id}}
+    {{items.form_token}}
+
+    <div class='form'>{{items.from_address}}</div>
+    <div class='form'>{{items.asset_name}}</div>
+    <div class='form'>{{items.quantity}}</div>
+    <div class='form'>{{items.to_address}}</div>
+    <div class='form'>{{items.save}}</div>
+</form>

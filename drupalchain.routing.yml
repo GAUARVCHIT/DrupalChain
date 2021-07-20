@@ -1,0 +1,13 @@
+drupalchain.chain:
+  path: '/chain' 
+  defaults: 
+    _controller: '\Drupal\drupalchain\Controller\SendAssetController::read_config' 
+  requirements: 
+    _permission: 'access content' 
+
+# drupalchain.sendasset:
+#   path: '/sendasset' 
+#   defaults: 
+#     _form: '\Drupal\drupalchain\Form\SendAssetForm' 
+#   requirements: 
+#     _permission: 'access content' 
