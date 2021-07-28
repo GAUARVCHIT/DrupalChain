@@ -21,12 +21,15 @@ class SendAssetController extends ControllerBase {
 
   public function array_get_column($array, $key) // see array_column() in recent versions of PHP
   {
+        //   print_r($array);
+        //   print_r($key);
   	$result=array();
-  	
-  	foreach ($array as $index => $element)
-  		if (array_key_exists($key, $element))
-  			$result[$index]=$element[$key];
-  	
+    
+  	    foreach ($array as $index => $element)
+  	    	if (array_key_exists($key, $element)){
+                $result[$index]=$element[$key];
+            }
+    // print_r($result);
   	return $result;
   }
 
@@ -137,9 +140,11 @@ class SendAssetController extends ControllerBase {
 	// $labels=array();
 
     // $getaddresses = $this->multichain('getaddresses', true);
+    // // print_r($getaddresses);
     // $listpermissions = $this->multichain('listpermissions', 'send', implode(',', $this->array_get_column($getaddresses, 'address')));
+    // // print_r($listpermissions);
     // $sendaddresses = $this->array_get_column($listpermissions, 'address');
-
+    // // print_r($sendaddresses);
     // foreach ($getaddresses as $address)
 	// 		if ($address['ismine'])
 	// 			$keymyaddresses[$address['address']]=true;
@@ -147,7 +152,10 @@ class SendAssetController extends ControllerBase {
     // $labels=$this->multichain_labels();
 
     // $listpermissions= $this->multichain('listpermissions', 'receive');
+    // // print_r($listpermissions);
     // $receiveaddresses= $this->array_get_column($listpermissions, 'address');
+
+    // print_r($receiveaddresses);
 
 
     //code completed for displaying assets
