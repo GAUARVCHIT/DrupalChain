@@ -26,7 +26,7 @@ class DiseaseStreamWebformHandler extends WebformHandlerBase{
     use StringTranslationTrait;
 
     public $multichain_chain;
-
+    
     public function output_html_error($html)
     {
         echo '<div class="bg-danger" style="padding:1em;">Error: '.$html.'</div>';
