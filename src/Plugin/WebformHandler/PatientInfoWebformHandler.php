@@ -131,6 +131,6 @@ class PatientInfoWebformHandler extends WebformHandlerBase{
         
         $sendtxid=$this->multichain('publishfrom', $postData['from_address'], $postData['stream_name'], $keys, $data);
 
-        drupal_set_message(t('Stream Created Sucessufully Txid:: %sendtxid',['%sendtxid' => $sendtxid['result']]),'status',True);
+        drupal_set_message(t('Patient information Publised Sucessufully Txid:: %sendtxid',['%sendtxid' => $sendtxid['result']]),'status',True);
     }
 }

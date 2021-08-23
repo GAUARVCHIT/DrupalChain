@@ -1,4 +1,4 @@
-name: Drupal Multichain
-description: module for setting up multichin with Drupal
+name: drupalchain
+description: module for setting up multichain with Drupal
 type: module
 core: '8.x'
